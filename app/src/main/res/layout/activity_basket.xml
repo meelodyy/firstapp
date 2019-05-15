@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasketActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/teamname"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="65sp" />
+
+            <Button
+                android:id="@+id/btn_basket1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:onClick="btnAdd1"
+                android:text="@string/btn_basket1" />
+
+            <Button
+                android:id="@+id/btn_basket2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:onClick="btnAdd2"
+                android:text="@string/btn_basket2" />
+
+            <Button
+                android:id="@+id/btn_basket3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnAdd3"
+                android:text="@string/btn_basket3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/teamname"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/score2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="65sp" />
+
+            <Button
+                android:id="@+id/btn_basket1b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:onClick="btnAdd1"
+                android:text="@string/btn_basket1" />
+
+            <Button
+                android:id="@+id/btn_basket2b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:onClick="btnAdd2"
+                android:text="@string/btn_basket2" />
+
+            <Button
+                android:id="@+id/btn_basket3b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnAdd3"
+                android:text="@string/btn_basket3" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_basket_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:onClick="btnReset"
+        android:text="@string/btn_basket_reset" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">firstapp</string>
+    <string name="hello">Hello android</string>
+    <string name="btn">Button ppp</string>
+    <string name="birth">Happy Birthday!</string>
+    <string name="from">Form PJR</string>
+    <string name="btnTemper">Temperature</string>
+    <string name="temper">showTemper</string>
+    <string name="inptemper">inpTemper</string>
+    <string name="hint_txt">Input temperature</string>
+    <string name="teamname">team name</string>
+    <string name="btn_basket1">+3 Points</string>
+    <string name="btn_basket2">+2 Points</string>
+    <string name="btn_basket3">+1 Point</string>
+    <string name="btn_basket_reset">Reset</string>
+    <string name="btn_dollar">Dollar</string>
+    <string name="btn_euro">Euro</string>
+    <string name="btn_won">Won</string>
+    <string name="hint_rate">Input RMB</string>
+    <string name="btn_opencfg">Config</string>
+    <string name="btn_rate_save">Save</string>
+    <string name="menu__rate_setting">Setting</string>
+    <string name="lable_open_list">OpenList</string>
+</resources>

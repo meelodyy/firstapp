@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">firstapp</string>
+    <string name="hello">你好</string>
+    <string name="btn">按钮</string>
+    <string name="birth">生日快乐！</string>
+    <string name="from">蒲俊蓉</string>
+    <string name="btnTemper">转化为华氏温度</string>
+    <string name="temper">结果为</string>
+    <string name="inptemper">输入温度</string>
+    <string name="hint_txt">请输入摄氏度</string>
+    <string name="teamname">队伍名称</string>
+    <string name="btn_basket1">加3分</string>
+    <string name="btn_basket2">加2分</string>
+    <string name="btn_basket3">加1分</string>
+    <string name="btn_basket_reset">重新计分</string>
+    <string name="btn_dollar">美元</string>
+    <string name="btn_euro">欧元</string>
+    <string name="btn_won">韩元</string>
+    <string name="hint_rate">输入人民币金额</string>
+    <string name="btn_opencfg">打开另一个页面</string>
+    <string name="btn_rate_save">保存</string>
+    <string name="menu__rate_setting">设置</string>
+    <string name="lable_open_list">打开列表</string>
+</resources>
