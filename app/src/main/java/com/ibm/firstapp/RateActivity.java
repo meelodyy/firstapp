@@ -3,12 +3,11 @@ package com.ibm.firstapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,12 +25,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class RateActivity extends AppCompatActivity implements Runnable{
     private final String TAG = "Rate";
@@ -174,13 +171,26 @@ public class RateActivity extends AppCompatActivity implements Runnable{
             openConfig();
         }else if(item.getItemId()==R.id.open_list){
             //打开列表窗口（同上面的openConfig方法，复制粘贴而来，没有参数传递，去掉config等代码，将activity改成RateListActivity,并将参数改为list）
-            Intent list = new Intent(this,MyListActivity.class);
+            Intent list = new Intent(this,RateListActivity.class);
 
 //        Log.i("openOne", "dollar_rate_key: "+dollarRate);
 //        Log.i("openOne", "euro_rate_key: "+euroRate);
 //        Log.i("openOne", "won_rate_key: "+wonRate);
 
             startActivity(list);
+
+            //测试数据库
+             RateItem item1 = new RateItem("aaa","123");
+             RateManager manager = new RateManager(this);
+             manager.add(item1);
+             manager.add(new RateItem("bbb","456"));
+            Log.i(TAG, "onOptionsItemSelected: 写入数据完毕");
+
+            //查询所有数据
+            List<RateItem> testList = manager.listAll();
+            for(RateItem i : testList){
+                Log.i(TAG, "onOptionsItemSelected: 取出数据[id="+i.getId()+"]Name=" + i.getCurName()+ "Rate=" + i.getCurRate());
+            }
         }
         return super.onOptionsItemSelected(item);
     }
