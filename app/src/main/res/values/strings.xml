@@ -21,4 +21,7 @@
     <string name="btn_rate_save">Save</string>
     <string name="menu__rate_setting">Setting</string>
     <string name="lable_open_list">OpenList</string>
+    <string name="rdo_home_label" translatable="false">首页</string>
+    <string name="rdo_func_label" translatable="false">功能</string>
+    <string name="rdo_setting_label" translatable="false">设置</string>
 </resources>

@@ -59,7 +59,7 @@ public class MyListActivity extends ListActivity implements Runnable,AdapterView
                 }
                 super.handleMessage(msg);
             };
-        }
+        };
 
 //        ListView listView = (ListView) findViewById(R.id.mylist);
 //        String data[] = {"aaaa","bbbbb"};
